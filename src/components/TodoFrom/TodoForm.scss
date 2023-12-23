@@ -1,0 +1,86 @@
+.TodoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .taskdetail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        height: 167px;
+        width: 360px;
+        // padding: 10px;
+        border: 1px solid rgb(206, 190, 164);
+        border-radius: 20px;
+
+
+
+        .taskdetailcount {
+            height: 110px;
+            width: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid green;
+            border-radius: 50%;
+            background-color: #ff5631;
+            color: white;
+            font-size: 24px;
+        }
+    }
+
+    .form {
+        display: flex;
+        gap: 10px;
+
+        input {
+            width: 295px;
+            height: 42px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            font-size: 20px;
+            padding: 5px;
+
+        }
+
+        button {
+            cursor: pointer;
+            height: 41px;
+            width: 41px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: bolder;
+            background-color: #ff5631;
+            border: none;
+
+        }
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .TodoForm {
+        margin-top: 50px;
+
+        .taskdetail{
+            height: 130px;
+            width: 300px;
+
+            .taskdetailcount{
+                height: 80px;
+                width: 80px;
+            }
+        }
+
+        .form{
+            input{
+                width: 260px;
+            }
+        }
+    }
+}
